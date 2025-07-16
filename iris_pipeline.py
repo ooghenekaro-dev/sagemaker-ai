@@ -16,7 +16,7 @@ from sagemaker.workflow.step_collections import RegisterModel
 from sagemaker.sklearn.estimator import SKLearn
 from sagemaker.processing import ScriptProcessor, ProcessingInput, ProcessingOutput
 from sagemaker.model import Model
-from sagemaker.model_monitor import DataCaptureConfig, ModelMonitor, Baseline
+from sagemaker.model_monitor import DataCaptureConfig, ModelMonitor
 from sagemaker.workflow.check_job_config import CheckJobConfig
 from sagemaker.workflow.check_step import QualityCheckStep
 from sagemaker.workflow.step_collections import ModelStep
