@@ -94,11 +94,8 @@ register_step = RegisterModel(
     approval_status=model_approval_status,
     model_package_group_name="IrisModelGroup",
     model_metrics={
-        "EvaluationMetrics": {
-            "EvaluationReport": {
-                "S3Uri": eval_step.outputs[0].destination + "/evaluation.json"
-            }
-        }
+            "EvaluationMetrics": eval_step.properties.PropertyFiles["EvaluationReport"]
+
     }
 )
 
