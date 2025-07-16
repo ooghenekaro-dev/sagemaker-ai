@@ -18,7 +18,6 @@ from sagemaker.processing import ScriptProcessor, ProcessingInput, ProcessingOut
 from sagemaker.model import Model
 from sagemaker.model_monitor import DataCaptureConfig, ModelMonitor
 from sagemaker.workflow.check_job_config import CheckJobConfig
-from sagemaker.workflow.check_step import QualityCheckStep
 from sagemaker.workflow.step_collections import ModelStep
 
 # Setup
